@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/main.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--Codes fournis par Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
  <header>
+  <!--barre de navigation-->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Quai Antique</a>
@@ -32,10 +34,10 @@
                 <a class="nav-link" href="#">Les réservations</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mon compte</a>
+                <a class="nav-link" href="/account">Mon compte</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Connexion/Déconnexion</a>
+                <a class="nav-link" href="/signin">Connexion</a>
               </li>
             </ul>
           </div>
@@ -44,8 +46,11 @@
     <main id="main-page">
         <!--Ici sera injectée le contenu du site-->
     </main>
+    
     <footer class="bg-dark text-white text-center footer">
+     <!--Mise du texte dans des colonnes--> 
       <div class="row">
+        <!--Col-12 Pour les petits écrans et col-lg-4 pour l'affichage sur grand écran-->
         <div class="col-12 col-lg-4">
           <h3 class="text-primary">Nos horaires</h3>
           <p>Du mardi au dimanche  12:00-14:00   20:00-23:00</p>
@@ -55,10 +60,11 @@
         </div>
         <div class="col-6 col-lg-4">
           <p>Mail</p>
-          <p>testicules</p>
+          <p>test@mail.com</p>
         </div>
       </div>
     </footer>
+    <!--Appel du router de type module car il y a des import, appel de bootstrap -->
     <script type="module" src="./Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
