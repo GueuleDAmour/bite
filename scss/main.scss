@@ -62,7 +62,7 @@ p{
         img{
             filter: brightness(0.3)
         }
-        .action-image-buttons, { 
+        .action-image-buttons{
             opacity:1;
         }
         .titre-image{
@@ -98,4 +98,13 @@ p{
 //Changer couleur par défaut du label de bootstrap
 .form-label{
     color:$primary;
+}
+
+//Style d'affichage de toutes les réservations
+.allreservations{
+    a{
+        display: block;
+        color: $black;
+        padding: 10px;
+    }
 }
