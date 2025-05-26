@@ -13,23 +13,48 @@
 <div class="container text-center allreservations">
   <a href="#">
     <span>12/05/2025</span>
-    <span>12:10</span>
-    <span>Pas d'allergies|</span>
+    <span>|12:10|</span>
+    <span>7 convives |</span>
+    <span>Sans Gluten</span>
   </a> 
 </div>     
 
 <div class="container text-center allreservations">
   <a href="#">
-    <span>|12/05/2025</span>
-    <span>20:00</span>
-    <span>Pas d'allergies|</span>
+    <span>12/05/2025</span>
+    <span>|20:00|</span>
+    <span>4 convives |</span>
+    <span>Pas d'allergies</span>
   </a> 
 </div>    
 
 <div class="container text-center allreservations">
   <a href="#">
     <span>30/05/2025</span>
-    <span>20:15</span>
+    <span>|20:15|</span>
+    <span>2 convives |</span>
     <span>Pas d'allergies</span>
   </a> 
 </div>    
+
+<!--Annulation de réservation (Appel de modale)-->
+<div class="text-center">
+  <button type="button" class="btn btn-danger m-3" data-bs-toggle="modal" data-bs-target="#AnnulationResa">Annuler une réservation</button>
+  </div>
+
+  <!--Modale de suppression résa-->
+  <div class="modal fade" id="AnnulationResa" tabindex="-1" aria-labelledby="AnnulationResaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="AnnulationResaLabel">Êtes-vous sûr de vouloir supprimer votre réservation?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <div class="d-inline-block">
+    <button type="button" class= "btn btn-danger" >Annuler</button></div>
+    <button type="button" class= "btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+    </div>
+
+
+
