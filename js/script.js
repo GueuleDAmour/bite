@@ -54,6 +54,16 @@ function eraseCookie(name) {
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
+//Savoir si on est connecté
+function isConnected(){
+    if(getToken() ==null  ||  getToken() ==undefined){
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
 
 /*On a donc plusieurs profils d'utilisateurs.
 -disconnected
