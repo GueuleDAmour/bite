@@ -11,30 +11,49 @@
     <div class="mb-3">
     <label for="Nomimput" class="form-label">Nom</label>
     <input type="text" class="form-control" id="NomInput" placeholder="Votre nom">
+    <!--message feedback de mail-->
+    <div class="invalid-feedback">Le nom est requis.</div>
   </div>
 
    <div class="mb-3">
     <label for="PrenomInput" class="form-label">Prénom</label>
     <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom">
+    <!--message feedback de mail-->
+    <div class="invalid-feedback">Le prénom est requis.</div>
   </div>
   <!--Demande d'une adresse email-->
     <div class="mb-3">
     <label for="EmailInput" class="form-label">Email</label>
-    <input type="email" class="form-control" id="EmailInput" placeholder="testicules@mail.com">
+    <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.com">
+    <!--message feedback de mail-->
+    <div class="invalid-feedback">Le mail n'est pas au bon format</div>
   </div>
     <!--Demande d'un mot de passe-->
   <div class="mb-3">
     <label for="PasswordInput" class="form-label">Mot de passe</label>
     <input type="password" class="form-control" id="PasswordInput">
+      <!--message feedback-->
+<div class="invalid-feedback">
+  Le mot de passe n'est pas valide. (8 caractères minimum, comprenant au moins 1 lettre Majuscule, 1 lettre minuscule et 1  caractère spécial)
+</div>
+<div class="valid-feedback">Le mot de passe est assez robuste</div>
   </div>
+
+
     <!--Validation du mot de passe-->
    <div class="mb-3">
-    <label for="ValidatePasswordInput" class="form-label">Validation du mot de passe</label>
+    <label for="ValidatePasswordInput" class="form-label">Confirmer votre mot de passe</label>
     <input type="password" class="form-control" id="ValidatePasswordInput">
+    <!--message feedback-->
+<div class="invalid-feedback">
+  Le mot de passe de confirmation n'est pas identique à votre mot de passe.
   </div>
   
-   <div class="text-center"><button type="submit" class="btn btn-primary">Inscription</button></div>
-</form>
+   <!--Bouton d'inscription-->
+    <div class="text-center mt-3"><button type="submit" class="btn btn-primary" id="btn-validation-inscription" disabled>
+      Inscription</button></div>
+  
+  
 
 <div class="text-center pt-3">
   <a href="/signin">Vous avez déjà un compte? Connectez-vous ici!</a>
